@@ -31,7 +31,7 @@ import PlutusTx.Prelude hiding (Semigroup (..), unless)
 import Text.Printf (printf)
 import Prelude (IO, Semigroup (..), Show, String)
 
--- User will start a fund and specify which fund it is.Then others can cast their vote in this fund.
+-- User will start a fund and specify which fund it is.Then others can fund projects in this fund.
 -- Once the fund ends , projects in this fund can collect their grants.
 data FundingDatum = FundingDatum
   { beneficiary :: PaymentPubKeyHash,
@@ -99,7 +99,7 @@ type FundSchema =
 -- start :: String
 -- start = ""
 
---  Function to cast their vote and the project they are voting for.
+--  Function to give their fund to projects
 fundProject :: forall w s e. AsContractError e => FundParams -> Contract w s e ()
 fundProject vp = do
   let dat =
