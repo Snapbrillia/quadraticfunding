@@ -1,8 +1,4 @@
-# Plutus Platform starter project
-![CI](https://github.com/input-output-hk/plutus-starter/actions/workflows/test.yml/badge.svg?branch=main)
-
-
-This project gives a simple starter project for using the Plutus Platform.
+# Snapbrillia Quadratic Funding Project
 
 ## Setting up
 
@@ -59,7 +55,7 @@ See [here](https://github.com/haskell/haskell-language-server#configuring-your-e
 ## The Plutus Application Backend (PAB) example
 
 We have provided an example PAB application in `./pab`. With the PAB we can serve and interact
-with contracts over a web API. You can read more about the PAB here: [PAB Architecture](https://github.com/input-output-hk/plutus-apps/blob/main/plutus-pab/ARCHITECTURE.adoc).
+with contracts over a web API.
 
 Here, the PAB is configured with one contract, the `Game` contract from `./examples/src/Plutus/Contracts/Game.hs`.
 
@@ -188,15 +184,11 @@ confirm that the transaction validates and the Ada is transferred into the right
 Note that you can verify the balances by looking at the log of `plutus-starter-pab`
 when exiting it by pressing return.
 
-Finally, also node that the PAB also exposes a websocket, which you can read about in
-the general [PAB Architecture documentation](https://github.com/input-output-hk/plutus-apps/blob/main/plutus-pab/ARCHITECTURE.adoc).
-
-
 ## Support/Issues/Community
 
-Issues can be filed in the [GitHub Issue tracker](https://github.com/input-output-hk/plutus-starter/issues).
+Issues can be filed in the [GitHub Issue tracker](https://github.com/Snapbrillia/quadraticfunding/issues).
 
-For more interactive discussion, you can join the [IOG Technical Community
-Discord](https://discord.gg/sSF5gmDBYg).
+For more interactive discussion, you can join the [Snapbrillia
+Discord](https://discord.gg/JtNTGGBwz7).
 
 Thanks!
